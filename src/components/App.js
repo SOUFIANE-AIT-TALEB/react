@@ -1,15 +1,7 @@
-import Banner from './Banner'
-//import Cart from './Cart'
-import ShoppingList from './ShoppingList'
+import '../styles/Banner.css'
 
-function App() {
-	return (
-		<div>
-			<Banner />
-			{/*<Cart /> */}
-			<ShoppingList />
-		</div>
-	)
+function Banner({ children }) {
+	return <div className='lmj-banner'>{children}</div>
 }
 
-export default App
+export default Banner
